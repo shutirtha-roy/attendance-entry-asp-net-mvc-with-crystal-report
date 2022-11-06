@@ -5,6 +5,8 @@ using EmployeeAttendance.Infrastructure.DbContext;
 using EmployeeAttendance.Web;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
+using Serilog.Events;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,6 +20,13 @@ builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder => {
     containerBuilder.RegisterModule(new WebModule());
     containerBuilder.RegisterModule(new InfrastructureModule(connectionString, assemblyName));
 });
+
+builder.Host.UseSerilog((ctx, lc) => lc
+    .MinimumLevel.Debug()
+    .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
+    .Enrich.FromLogContext()
+    .ReadFrom.Configuration(builder.Configuration)
+);
 
 builder.Services.AddDbContext<TrainingDbContext>(options =>
     options.UseSqlServer(

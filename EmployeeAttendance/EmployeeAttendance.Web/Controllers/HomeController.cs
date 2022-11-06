@@ -15,11 +15,13 @@ namespace EmployeeAttendance.Web.Controllers
 
         public IActionResult Index()
         {
+            _logger.LogInformation("I am in the Index page");
             return View();
         }
 
         public IActionResult Privacy()
         {
+            _logger.LogError("I am in Privacy page");
             return View();
         }
 
