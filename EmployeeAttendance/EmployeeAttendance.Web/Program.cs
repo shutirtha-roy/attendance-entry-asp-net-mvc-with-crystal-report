@@ -1,17 +1,35 @@
-using EmployeeAttendance.Web.Data;
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
+using EmployeeAttendance.Infrastructure;
+using EmployeeAttendance.Infrastructure.DbContext;
+using EmployeeAttendance.Web;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(connectionString));
+var assemblyName = Assembly.GetExecutingAssembly().FullName;
+
+builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
+builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder => {
+    containerBuilder.RegisterModule(new WebModule());
+    containerBuilder.RegisterModule(new InfrastructureModule(connectionString, assemblyName));
+});
+
+builder.Services.AddDbContext<TrainingDbContext>(options =>
+    options.UseSqlServer(
+        connectionString,
+        m => m.MigrationsAssembly(assemblyName)
+    )
+);
+
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddEntityFrameworkStores<ApplicationDbContext>();
+    .AddEntityFrameworkStores<TrainingDbContext>();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
