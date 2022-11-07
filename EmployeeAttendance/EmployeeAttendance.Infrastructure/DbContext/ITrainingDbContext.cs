@@ -1,4 +1,6 @@
-﻿using System;
+﻿using EmployeeAttendance.Infrastructure.Entities;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +10,6 @@ namespace EmployeeAttendance.Infrastructure.DbContext
 {
     public interface ITrainingDbContext
     {
+        public DbSet<AttendanceEntity> Attendances { get; set; }
     }
 }

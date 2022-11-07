@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using EmployeeAttendance.Infrastructure.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -30,5 +31,7 @@ namespace EmployeeAttendance.Infrastructure.DbContext
 
             base.OnConfiguring(optionsBuilder);
         }
+
+        public DbSet<AttendanceEntity> Attendances { get; set; }
     }
 }
