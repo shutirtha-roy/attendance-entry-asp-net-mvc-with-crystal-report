@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EmployeeAttendance.Infrastructure.BusinessObjects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,7 @@ namespace EmployeeAttendance.Infrastructure.Services
 {
     public interface IAttendanceService
     {
+        void CreateAttendance(Attendance attendance);
+        object GetAtttendance();
     }
 }

@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace EmployeeAttendance.Infrastructure.Services
 {
-    public class EmployeeService
+    public class EmployeeService : IEmployeeService
     {
+        public void GetAllEmployee()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

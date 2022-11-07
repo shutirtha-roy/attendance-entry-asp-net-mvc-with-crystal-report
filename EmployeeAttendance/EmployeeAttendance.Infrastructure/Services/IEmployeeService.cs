@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace EmployeeAttendance.Infrastructure.Services
 {
-    public class IEmployeeService
+    public interface IEmployeeService
     {
+        void GetAllEmployee();
     }
 }
