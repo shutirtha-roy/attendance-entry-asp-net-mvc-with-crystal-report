@@ -1,5 +1,8 @@
 ﻿using Autofac;
 using EmployeeAttendance.Infrastructure.DbContext;
+using EmployeeAttendance.Infrastructure.Repositories;
+using EmployeeAttendance.Infrastructure.Services;
+using EmployeeAttendance.Infrastructure.UnitOfWorks;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +27,27 @@ namespace EmployeeAttendance.Infrastructure
             builder.RegisterType<TrainingDbContext>().AsSelf()
                 .WithParameter("connectionString", _connectionString)
                 .WithParameter("migrationAssemblyName", _migrationAssemblyName)
+                .InstancePerLifetimeScope();
+
+            builder.RegisterType<TrainingDbContext>().As<ITrainingDbContext>()
+                .WithParameter("connectionString", _connectionString)
+                .WithParameter("migrationAssemblyName", _migrationAssemblyName)
+                .InstancePerLifetimeScope();
+
+            builder.RegisterType<AttendanceService>()
+                .As<IAttendanceService>()
+                .InstancePerLifetimeScope();
+
+            builder.RegisterType<AttendanceRepository>()
+                .As<IAttendanceRepository>()
+                .InstancePerLifetimeScope();
+
+            builder.RegisterType<EmployeeService>()
+                .As<IEmployeeService>()
+                .InstancePerLifetimeScope();
+
+            builder.RegisterType<ApplicationUnitOfWork>()
+                .As<IApplicationUnitOfWork>()
                 .InstancePerLifetimeScope();
 
             base.Load(builder);
