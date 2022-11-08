@@ -4,15 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using DbContextObject = Microsoft.EntityFrameworkCore.DbContext;
 
 namespace EmployeeAttendance.Infrastructure.UnitOfWorks
 {
     public abstract class UnitOfWork : IUnitOfWork
     {
-        protected readonly DbContextObject _dbContext;
+        protected readonly DbContext _dbContext;
 
-        public UnitOfWork(DbContextObject dbContext)
+        public UnitOfWork(DbContext dbContext)
         {
             _dbContext = dbContext;
         }
