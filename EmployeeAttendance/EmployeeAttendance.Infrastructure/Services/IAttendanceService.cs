@@ -10,6 +10,6 @@ namespace EmployeeAttendance.Infrastructure.Services
     public interface IAttendanceService
     {
         void CreateAttendance(Attendance attendance);
-        object GetAtttendance();
+        object GetAllAtttendance();
     }
 }
