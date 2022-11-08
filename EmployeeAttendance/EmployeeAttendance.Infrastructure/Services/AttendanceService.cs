@@ -19,7 +19,7 @@ namespace EmployeeAttendance.Infrastructure.Services
             _applicationUnitOfWork = applicationUnitOfWork;
         }
 
-        public void CreateAttendance(Attendance attendance)
+        public void CreateAttendance(AttendanceBO attendance)
         {
             AttendanceEO courseEntity = new AttendanceEO();
             courseEntity.EmployeeId = attendance.EmployeeId;
