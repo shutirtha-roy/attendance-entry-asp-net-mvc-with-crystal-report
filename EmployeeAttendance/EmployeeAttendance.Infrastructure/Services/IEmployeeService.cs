@@ -8,6 +8,6 @@ namespace EmployeeAttendance.Infrastructure.Services
 {
     public interface IEmployeeService
     {
-        void GetAllEmployee();
+        dynamic GetAllEmployee();
     }
 }
