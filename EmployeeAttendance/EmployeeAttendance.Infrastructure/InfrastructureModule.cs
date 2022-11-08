@@ -1,5 +1,5 @@
 ﻿using Autofac;
-using EmployeeAttendance.Infrastructure.DbContext;
+using EmployeeAttendance.Infrastructure.DbContexts;
 using EmployeeAttendance.Infrastructure.Repositories;
 using EmployeeAttendance.Infrastructure.Services;
 using EmployeeAttendance.Infrastructure.UnitOfWorks;
