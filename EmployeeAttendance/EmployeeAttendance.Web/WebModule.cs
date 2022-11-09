@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using EmployeeAttendance.Web.Areas.Admin.Models;
 
 namespace EmployeeAttendance.Web
 {
@@ -6,6 +7,12 @@ namespace EmployeeAttendance.Web
     {
         protected override void Load(ContainerBuilder builder)
         {
+            builder.RegisterType<AttendanceCreateModel>().AsSelf();
+
+            builder.RegisterType<EmployeeModel>().AsSelf();
+
+            builder.RegisterType<AttendanceViewModel>().AsSelf();
+
             base.Load(builder);
         }
     }
