@@ -18,7 +18,7 @@ namespace EmployeeAttendance.Web.Areas.Admin.Models
             _employeeService = _scope.Resolve<IEmployeeService>();
         }
 
-        internal object GetAllEmployeeProfile()
+        internal dynamic GetAllEmployeeProfile()
         {
             return _employeeService.GetAllEmployee();
         }
