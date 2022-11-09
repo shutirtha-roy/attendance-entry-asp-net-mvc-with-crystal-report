@@ -46,9 +46,9 @@ namespace EmployeeAttendance.Infrastructure.Services
                 employeeProfileList.Add(new SelectListItem { Text = dr["EmployeeName"].ToString(), Value = dr["EmployeeProfileId"].ToString() }); ;
             }
 
-            var data = from value in employeeProfileList select new { value.Text, value.Value };
+            //var data = from value in employeeProfileList select new { value.Text, value.Value };
 
-            return data;
+            return employeeProfileList;
         }
     }
 }

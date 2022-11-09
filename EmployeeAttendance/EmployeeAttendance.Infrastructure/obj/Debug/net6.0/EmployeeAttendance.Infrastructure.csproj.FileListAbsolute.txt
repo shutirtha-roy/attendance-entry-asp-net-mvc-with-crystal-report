@@ -12,3 +12,17 @@ F:\Development\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendan
 F:\Development\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Infrastructure\obj\Debug\net6.0\ref\EmployeeAttendance.Infrastructure.dll
 F:\Development\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Infrastructure\obj\Debug\net6.0\EmployeeAttendance.Infrastructure.pdb
 F:\Development\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Infrastructure\obj\Debug\net6.0\EmployeeAttendance.Infrastructure.genruntimeconfig.cache
+F:\Development\Local_Project\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Infrastructure\obj\Debug\net6.0\EmployeeAttendance.Infrastructure.csproj.AssemblyReference.cache
+F:\Development\Local_Project\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Infrastructure\obj\Debug\net6.0\EmployeeAttendance.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+F:\Development\Local_Project\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Infrastructure\obj\Debug\net6.0\EmployeeAttendance.Infrastructure.AssemblyInfoInputs.cache
+F:\Development\Local_Project\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Infrastructure\obj\Debug\net6.0\EmployeeAttendance.Infrastructure.AssemblyInfo.cs
+F:\Development\Local_Project\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Infrastructure\obj\Debug\net6.0\EmployeeAttendance.Infrastructure.csproj.CoreCompileInputs.cache
+F:\Development\Local_Project\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Infrastructure\obj\Debug\net6.0\EmployeeAttendance.Infrastructure.dll
+F:\Development\Local_Project\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Infrastructure\obj\Debug\net6.0\ref\EmployeeAttendance.Infrastructure.dll
+F:\Development\Local_Project\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Infrastructure\obj\Debug\net6.0\EmployeeAttendance.Infrastructure.pdb
+F:\Development\Local_Project\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Infrastructure\bin\Debug\net6.0\EmployeeAttendance.Infrastructure.deps.json
+F:\Development\Local_Project\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Infrastructure\bin\Debug\net6.0\EmployeeAttendance.Infrastructure.runtimeconfig.json
+F:\Development\Local_Project\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Infrastructure\bin\Debug\net6.0\EmployeeAttendance.Infrastructure.dll
+F:\Development\Local_Project\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Infrastructure\bin\Debug\net6.0\ref\EmployeeAttendance.Infrastructure.dll
+F:\Development\Local_Project\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Infrastructure\bin\Debug\net6.0\EmployeeAttendance.Infrastructure.pdb
+F:\Development\Local_Project\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Infrastructure\obj\Debug\net6.0\EmployeeAttendance.Infrastructure.genruntimeconfig.cache
