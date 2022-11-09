@@ -1,0 +1,19 @@
+﻿@model AttendanceViewModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+
+<form role="form" asp-action="Create" 
+                    asp-area="Admin" asp-controller="Attendance" method="post">
+ <div class="mb-3">
+    <select asp-items="@Model.EmployeeList" >
+        <option>Please select one</option>
+    </select>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+
+</form> 
