@@ -1,7 +1,7 @@
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using EmployeeAttendance.Infrastructure;
-using EmployeeAttendance.Infrastructure.DbContext;
+using EmployeeAttendance.Infrastructure.DbContexts;
 using EmployeeAttendance.Web;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
