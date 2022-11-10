@@ -17,12 +17,12 @@ namespace EmployeeAttendance.Infrastructure.BusinessObjects
 
         public string GetOnlyDate(DateTime time)
         {
-            return time.ToShortDateString();
+            return time.ToString("dddd, dd MMMM yyyy");
         }
 
         public string GetOnlyTime(DateTime time)
         {
-            return time.ToShortTimeString();
+            return time.ToString("hh:mm tt");
         }
 
     }
