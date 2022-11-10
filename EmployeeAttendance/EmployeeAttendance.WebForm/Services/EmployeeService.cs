@@ -43,7 +43,11 @@ namespace EmployeeAttendance.WebForm.Services
 
         public DataSet GetDataFromEmployeeAndDateTime(string id, string before, string after)
         {
-            string command = $"SELECT CreatedDate, InTime, OutTime, Remarks FROM Attendances WHERE EmployeeId = '{id}' AND CreatedDate BETWEEN '{before}' AND '{after}'";
+            string command = $@"SELECT [Id] ,[EmployeeId], CONVERT(VARCHAR(10),[CreatedDate], 103) 
+                                as CreatedDate ,CONVERT(VARCHAR(10),[InTime], 114) as InTime, CONVERT(VARCHAR(10),[OutTime], 114) as OutTime,
+                                [Remarks] FROM [DB_HRIS_Employee].[dbo].[Attendances] 
+                                WHERE EmployeeId = '{id}' AND CreatedDate BETWEEN '{before}' AND '{after}'";
+
             SqlCommand sqlCommand = PrepareCommand(command);
 
             if (sqlCommand.Connection.State != System.Data.ConnectionState.Open)
