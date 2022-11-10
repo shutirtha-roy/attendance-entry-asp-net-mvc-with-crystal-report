@@ -12,6 +12,7 @@ namespace EmployeeAttendance.Web.Areas.Admin.Models
         {
 
         }
+
         public void ResolveDependency(ILifetimeScope scope)
         {
             _scope = scope;

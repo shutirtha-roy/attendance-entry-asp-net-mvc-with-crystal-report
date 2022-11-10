@@ -11,5 +11,6 @@ namespace EmployeeAttendance.Infrastructure.Services
     {
         void CreateAttendance(Attendance attendance);
         object GetAllAtttendance();
+        object GetAllModifitedAttendance();
     }
 }

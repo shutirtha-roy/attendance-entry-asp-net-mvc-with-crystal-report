@@ -14,5 +14,16 @@ namespace EmployeeAttendance.Infrastructure.BusinessObjects
         public DateTime InTime { get; set; }
         public DateTime OutTime { get; set; }
         public string Remarks { get; set; }
+
+        public string GetOnlyDate(DateTime time)
+        {
+            return time.ToShortDateString();
+        }
+
+        public string GetOnlyTime(DateTime time)
+        {
+            return time.ToShortTimeString();
+        }
+
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "y4/9o5GSXpLhGApUy426OeQalg9y3OWFx2znYoySXPo=",
+  "Hash": "aa+pJE67MTdSG8D4JWSo5+P+n68wrAKWJVnYGz2u2g4=",
   "Source": "EmployeeAttendance.Web",
   "BasePath": "_content/EmployeeAttendance.Web",
   "Mode": "Default",
@@ -1120,6 +1120,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "F:\\Development\\attendance-entry-asp-net-mvc-with-crystal-report\\EmployeeAttendance\\EmployeeAttendance.Web\\wwwroot\\js\\attendance.js",
+      "SourceId": "EmployeeAttendance.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Development\\attendance-entry-asp-net-mvc-with-crystal-report\\EmployeeAttendance\\EmployeeAttendance.Web\\wwwroot\\",
+      "BasePath": "_content/EmployeeAttendance.Web",
+      "RelativePath": "js/attendance.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\attendance.js"
     },
     {
       "Identity": "F:\\Development\\attendance-entry-asp-net-mvc-with-crystal-report\\EmployeeAttendance\\EmployeeAttendance.Web\\wwwroot\\js\\site.js",

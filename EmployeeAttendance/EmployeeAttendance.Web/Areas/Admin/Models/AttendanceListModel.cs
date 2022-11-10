@@ -23,5 +23,10 @@ namespace EmployeeAttendance.Web.Areas.Admin.Models
         {
             return _attendanceService?.GetAllAtttendance();
         }
+
+        internal object? GetAllModifiedAttendance()
+        {
+            return _attendanceService?.GetAllModifitedAttendance();
+        }
     }
 }

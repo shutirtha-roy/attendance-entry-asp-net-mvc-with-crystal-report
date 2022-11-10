@@ -33,9 +33,25 @@ namespace EmployeeAttendance.Infrastructure.Services
             _applicationUnitOfWork.Save();
         }
 
-        public object GetAllAtttendance()
+        public dynamic GetAllAtttendance()
         {
             return _applicationUnitOfWork.Attendances.GetAll();
+        }
+
+        public object GetAllModifitedAttendance()
+        {
+            AttendanceBO attendanceBO = new AttendanceBO();
+            List<dynamic> data = new List<dynamic>();
+
+            var allAttendanceData = GetAllAtttendance();
+
+            foreach(var attendance in allAttendanceData)
+            {
+                data.Add(new { CreatedDate = attendanceBO.GetOnlyDate(attendance.CreatedDate), InTime = attendanceBO.GetOnlyTime(attendance.InTime), 
+                                OutTime = attendanceBO.GetOnlyTime(attendance.OutTime), Remarks = attendance.Remarks + "Test" });
+            }
+
+            return data;
         }
     }
 }

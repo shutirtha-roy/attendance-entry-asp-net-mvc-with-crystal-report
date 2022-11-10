@@ -58,6 +58,16 @@ namespace EmployeeAttendance.Web.Areas.Admin.Controllers
         }
 
         [HttpGet]
+        public ActionResult GetAllModifiedTimeAttendance()
+        {
+            AttendanceListModel attendanceModel = _scope.Resolve<AttendanceListModel>();
+            attendanceModel.ResolveDependency(_scope);
+
+            var objAttendanceModifiedList = attendanceModel.GetAllModifiedAttendance();
+            return Json(new { data = objAttendanceModifiedList });
+        }
+
+        [HttpGet]
         public IEnumerable<SelectListItem> GetSelectedEmployeeProfileData()
         {
             EmployeeModel employeeModel = _scope.Resolve<EmployeeModel>();

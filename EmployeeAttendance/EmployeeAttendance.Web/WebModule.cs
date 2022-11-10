@@ -13,6 +13,8 @@ namespace EmployeeAttendance.Web
 
             builder.RegisterType<AttendanceViewModel>().AsSelf();
 
+            builder.RegisterType<AttendanceListModel>().AsSelf();
+
             base.Load(builder);
         }
     }
