@@ -43,7 +43,7 @@ namespace EmployeeAttendance.WebForm.Services
 
         public DataSet GetDataFromEmployeeAndDateTime(string id, string before, string after)
         {
-            string command = $"SELECT * FROM Attendances WHERE EmployeeId = '{id}' AND CreatedDate BETWEEN '{before}' AND '{after}'";
+            string command = $"SELECT CreatedDate, InTime, OutTime, Remarks FROM Attendances WHERE EmployeeId = '{id}' AND CreatedDate BETWEEN '{before}' AND '{after}'";
             SqlCommand sqlCommand = PrepareCommand(command);
 
             if (sqlCommand.Connection.State != System.Data.ConnectionState.Open)

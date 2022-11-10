@@ -1,4 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="EmployeeReport.aspx.cs" Inherits="EmployeeAttendance.WebForm.Setup.EmployeeReport" %>
+
+<%@ Register Assembly="CrystalDecisions.Web, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" Namespace="CrystalDecisions.Web" TagPrefix="CR" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="text-center">
         <h1 class="form-title">Employee Attendance Report</h1>
@@ -29,6 +31,10 @@
             <asp:Button CssClass="btn btn-success btn-lg mb-5" ID="btnSave" runat="server" Text="GetAttendanceReport" OnClick="btnGetAttendanceReport_Click" />
             <%--&nbsp;
             <asp:Button CssClass="btn btn-secondary btn-lg mb-5" ID="btnClearForm" runat="server" Text="ClearForm" OnClick="btnClearForm_Click" />--%>
+
+            <div>
+                <CR:CrystalReportViewer ID="CrystalReportViewer1" runat="server" AutoDataBind="true" />
+            </div>
         </div>
 
     </form>

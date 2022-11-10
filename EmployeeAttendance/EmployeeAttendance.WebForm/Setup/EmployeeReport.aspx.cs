@@ -1,4 +1,6 @@
-﻿using EmployeeAttendance.WebForm.Services;
+﻿using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Shared;
+using EmployeeAttendance.WebForm.Services;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -57,6 +59,13 @@ namespace EmployeeAttendance.WebForm.Setup
         protected void btnGetAttendanceReport_Click(object sender, EventArgs e)
         {
             DataSet dataSet = _employeeService.GetDataFromEmployeeAndDateTime(EmployeeId, txtStartDate.Text, txtEndDate.Text);
+
+            ReportDocument Report = new ReportDocument();
+            Report.Load(Server.MapPath("~/Reports/AttendanceReport.rpt"));
+            Report.SetDataSource(dataSet.Tables["table"]);
+            CrystalReportViewer1.ReportSource = Report;
+            Report.ExportToHttpResponse(ExportFormatType.PortableDocFormat, Response, false, "Employee Attendance Information");
+            
         }
     }
 }
