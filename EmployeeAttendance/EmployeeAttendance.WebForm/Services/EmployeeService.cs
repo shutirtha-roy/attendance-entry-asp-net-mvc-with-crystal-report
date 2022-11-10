@@ -26,7 +26,7 @@ namespace EmployeeAttendance.WebForm.Services
 
         public DataTable GetAllCompanyEmployeeProfile()
         {
-            string command = $"SELECT * Hrms_Company_Employee_Profile";
+            string command = $"SELECT * FROM Hrms_Company_Employee_Profile";
             SqlCommand sqlCommand = PrepareCommand(command);
 
             if (sqlCommand.Connection.State != System.Data.ConnectionState.Open)
@@ -41,7 +41,7 @@ namespace EmployeeAttendance.WebForm.Services
             return dataTable;
         }
 
-        public DataSet GetDataFromEmployeeAndDateTime(Guid id, DateTime before, DateTime after)
+        public DataSet GetDataFromEmployeeAndDateTime(string id, string before, string after)
         {
             string command = $"SELECT * FROM Attendances WHERE EmployeeId = '{id}' AND CreatedDate BETWEEN '{before}' AND '{after}'";
             SqlCommand sqlCommand = PrepareCommand(command);

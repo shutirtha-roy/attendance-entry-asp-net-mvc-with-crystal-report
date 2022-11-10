@@ -10,6 +10,6 @@ namespace EmployeeAttendance.WebForm.Services
     public interface IEmployeeService
     {
         DataTable GetAllCompanyEmployeeProfile();
-        DataSet GetDataFromEmployeeAndDateTime(Guid id, DateTime before, DateTime after);
+        DataSet GetDataFromEmployeeAndDateTime(string id, string before, string after);
     }
 }
