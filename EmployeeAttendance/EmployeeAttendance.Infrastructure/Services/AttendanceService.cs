@@ -1,4 +1,5 @@
-﻿using EmployeeAttendance.Infrastructure.BusinessObjects;
+﻿using Autofac;
+using EmployeeAttendance.Infrastructure.BusinessObjects;
 using EmployeeAttendance.Infrastructure.DbContexts;
 using EmployeeAttendance.Infrastructure.UnitOfWorks;
 using System;
@@ -14,10 +15,12 @@ namespace EmployeeAttendance.Infrastructure.Services
     public class AttendanceService : IAttendanceService
     {
         private readonly IApplicationUnitOfWork _applicationUnitOfWork;
+        private readonly ILifetimeScope _scope;
 
-        public AttendanceService(IApplicationUnitOfWork applicationUnitOfWork)
+        public AttendanceService(IApplicationUnitOfWork applicationUnitOfWork, ILifetimeScope scope)
         {
             _applicationUnitOfWork = applicationUnitOfWork;
+            _scope = scope;
         }
 
         public void CreateAttendance(AttendanceBO attendance)
@@ -40,6 +43,8 @@ namespace EmployeeAttendance.Infrastructure.Services
 
         public object GetAllModifitedAttendance()
         {
+            IEmployeeService employeeService = _scope.Resolve<IEmployeeService>();
+
             AttendanceBO attendanceBO = new AttendanceBO();
             List<dynamic> data = new List<dynamic>();
 
@@ -47,8 +52,13 @@ namespace EmployeeAttendance.Infrastructure.Services
 
             foreach(var attendance in allAttendanceData)
             {
-                data.Add(new { CreatedDate = attendanceBO.GetOnlyDate(attendance.CreatedDate), InTime = attendanceBO.GetOnlyTime(attendance.InTime), 
-                                OutTime = attendanceBO.GetOnlyTime(attendance.OutTime), Remarks = attendance.Remarks + "Test" });
+                data.Add(new { 
+                    Name = employeeService.GetEmployeeName(attendance.EmployeeId), 
+                    CreatedDate = attendanceBO.GetOnlyDate(attendance.CreatedDate), 
+                    InTime = attendanceBO.GetOnlyTime(attendance.InTime), 
+                    OutTime = attendanceBO.GetOnlyTime(attendance.OutTime), 
+                    Remarks = attendance.Remarks
+                });
             }
 
             return data;

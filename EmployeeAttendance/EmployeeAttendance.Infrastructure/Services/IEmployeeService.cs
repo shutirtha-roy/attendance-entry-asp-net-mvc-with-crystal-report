@@ -9,5 +9,6 @@ namespace EmployeeAttendance.Infrastructure.Services
     public interface IEmployeeService
     {
         dynamic GetAllEmployee();
+        string GetEmployeeName(Guid id);
     }
 }

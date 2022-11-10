@@ -50,5 +50,27 @@ namespace EmployeeAttendance.Infrastructure.Services
 
             return employeeProfileList;
         }
+
+        public string GetEmployeeName(Guid id)
+        {
+            string command = $"SELECT TOP 1 EmployeeName FROM Hrms_Company_Employee_Profile WHERE EmployeeProfileId = '{id}'";
+            using SqlCommand sqlCommand = PrepareCommand(command);
+
+            if (sqlCommand.Connection.State != System.Data.ConnectionState.Open)
+                sqlCommand.Connection.Open();
+
+            using SqlDataReader reader = sqlCommand.ExecuteReader();
+            string employeeName = "Intern";
+
+            if (reader.Read())
+            {
+                for (var i = 0; i < reader.FieldCount; i++)
+                {
+                    employeeName = (string)reader.GetValue(i);
+                }
+            }
+
+            return employeeName;
+        }
     }
 }

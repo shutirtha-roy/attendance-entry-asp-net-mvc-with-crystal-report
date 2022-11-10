@@ -6,10 +6,11 @@ function loadEmployeeLeaveDataTable() {
             "url": "/Admin/Attendance/GetAllModifiedTimeAttendance"
         },
         "columns": [
-            { "data": "createdDate", "width": "25%" },
-            { "data": "inTime", "width": "25%" },
-            { "data": "outTime", "width": "25%" },
-            { "data": "remarks", "width": "25%" }
+            { "data": "name", "width": "20%" },
+            { "data": "createdDate", "width": "20%" },
+            { "data": "inTime", "width": "20%" },
+            { "data": "outTime", "width": "20%" },
+            { "data": "remarks", "width": "20%" }
         ]
     });
 }
