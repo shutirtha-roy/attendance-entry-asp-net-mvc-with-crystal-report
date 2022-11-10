@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeAttendance.Web", "EmployeeAttendance.Web\EmployeeAttendance.Web.csproj", "{34BD6D89-A37D-48A3-9CBA-EE6B124CADFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeAttendance.Web", "EmployeeAttendance.Web\EmployeeAttendance.Web.csproj", "{34BD6D89-A37D-48A3-9CBA-EE6B124CADFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeAttendance.Infrastructure", "EmployeeAttendance.Infrastructure\EmployeeAttendance.Infrastructure.csproj", "{68CC706C-590B-464E-9634-1F025F8F4E61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeAttendance.Infrastructure", "EmployeeAttendance.Infrastructure\EmployeeAttendance.Infrastructure.csproj", "{68CC706C-590B-464E-9634-1F025F8F4E61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeAttendance.WebForm", "EmployeeAttendance.WebForm\EmployeeAttendance.WebForm.csproj", "{BC3F38A8-3091-4DCC-ACAD-B238D9F27004}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{68CC706C-590B-464E-9634-1F025F8F4E61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68CC706C-590B-464E-9634-1F025F8F4E61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68CC706C-590B-464E-9634-1F025F8F4E61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC3F38A8-3091-4DCC-ACAD-B238D9F27004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC3F38A8-3091-4DCC-ACAD-B238D9F27004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC3F38A8-3091-4DCC-ACAD-B238D9F27004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC3F38A8-3091-4DCC-ACAD-B238D9F27004}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
