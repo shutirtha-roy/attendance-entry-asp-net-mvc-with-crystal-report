@@ -27,7 +27,7 @@ namespace EmployeeAttendance.Web.Areas.Admin.Controllers
         {
             AttendanceViewModel attendanceVM = _scope.Resolve<AttendanceViewModel>();
             attendanceVM.Attendance = _scope.Resolve<AttendanceCreateModel>();
-            attendanceVM.EmployeeList = GetEmployeeProfileData();
+            attendanceVM.EmployeeList = GetSelectedEmployeeProfileData();
 
             return View(attendanceVM);
         }
@@ -40,15 +40,25 @@ namespace EmployeeAttendance.Web.Areas.Admin.Controllers
             {
                 obj.Attendance.ResolveDependency(_scope);
                 obj.Attendance.CreateAttendance();
-
-               return RedirectToAction("Create");
+                return RedirectToAction("Create");
+                
             }
 
-            return View();
+            return View(obj);
         }
 
         [HttpGet]
-        public dynamic GetEmployeeProfileData()
+        public ActionResult GetAllAttendance()
+        {
+            AttendanceListModel attendanceModel = _scope.Resolve<AttendanceListModel>();
+            attendanceModel.ResolveDependency(_scope);
+
+            var objAttendanceList = attendanceModel.GetAllAttendance();
+            return Json(new { data = objAttendanceList });
+        }
+
+        [HttpGet]
+        public IEnumerable<SelectListItem> GetSelectedEmployeeProfileData()
         {
             EmployeeModel employeeModel = _scope.Resolve<EmployeeModel>();
             employeeModel.ResolveDependency(_scope);
