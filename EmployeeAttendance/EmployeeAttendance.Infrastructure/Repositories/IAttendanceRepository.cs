@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace EmployeeAttendance.Infrastructure.Repositories
 {
-    public interface IAttendanceRepository : IRepository<AttendanceEntity>
+    public interface IAttendanceRepository : IRepository<AttendanceEntity, Guid>
     {
-        void Update(AttendanceEntity obj);
     }
 }

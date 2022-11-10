@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EmployeeAttendance.Infrastructure.Entities
 {
-    internal interface IEntity<T>
+    public interface IEntity<T>
     {
         T Id { get; set; }
     }

@@ -3,17 +3,46 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
-
-
-<form role="form" asp-action="Create" 
-                    asp-area="Admin" asp-controller="Attendance" method="post">
- <div class="mb-3">
-    <select asp-items="@Model.EmployeeList" >
-        <option>Please select one</option>
-    </select>
-
-    <button type="submit" class="btn btn-primary">Submit</button>
+<div class="text-center">
+    <h1 class="form-title">Add Employee Attendance</h1>
 </div>
 
+
+<form role="form" asp-antiforgery="true" asp-action="Create"
+  asp-area="Admin" asp-controller="Attendance" method="post">
+     <div class="mx-auto text-center mb-5" style="width: 620px;">
+        <div class="form-group">
+            <label asp-for="@Model.Attendance.EmployeeId">Please select the employee</label>
+            <select class="form-control" asp-for="@Model.Attendance.EmployeeId" asp-items="@Model.EmployeeList">
+                <option>Please select one</option>
+            </select>
+            <span asp-validation-for="@Model.Attendance.EmployeeId" class="text-danger"></span>
+        </div>
+    
+        <div class="form-group row">
+            <label asp-for="@Model.Attendance.CreatedDate"></label>
+            <input type="text" asp-for="@Model.Attendance.CreatedDate" class="form-control" />
+            <span asp-validation-for="@Model.Attendance.CreatedDate" class="text-danger"></span>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="@Model.Attendance.InTime"></label>
+            <input type="text" asp-for="@Model.Attendance.InTime" class="form-control" />
+            <span asp-validation-for="@Model.Attendance.InTime" class="text-danger"></span>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="@Model.Attendance.OutTime"></label>
+            <input type="text" asp-for="@Model.Attendance.OutTime" class="form-control" />
+            <span asp-validation-for="@Model.Attendance.OutTime" class="text-danger"></span>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="@Model.Attendance.Remarks"></label>
+            <input type="text" asp-for="@Model.Attendance.Remarks" class="form-control" />
+            <span asp-validation-for="@Model.Attendance.Remarks" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 150px">Create Attendance</button>
+    </div>
 </form> 

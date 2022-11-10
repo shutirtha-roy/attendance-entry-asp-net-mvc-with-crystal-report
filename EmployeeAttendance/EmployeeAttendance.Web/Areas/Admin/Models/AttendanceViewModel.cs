@@ -6,7 +6,7 @@ namespace EmployeeAttendance.Web.Areas.Admin.Models
     public class AttendanceViewModel
     {
         public AttendanceCreateModel Attendance { get; set; }
-        //[ValidateNever]
+        [ValidateNever]
         public List<SelectListItem> EmployeeList { get; set; }
 
         public AttendanceViewModel()

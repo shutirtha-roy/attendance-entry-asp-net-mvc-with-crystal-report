@@ -17,7 +17,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.10",
           "Serilog.AspNetCore": "6.0.1",
-          "System.Linq.Dynamic.Core": "1.2.22"
+          "System.Linq.Dynamic.Core": "1.2.20"
         },
         "runtime": {
           "EmployeeAttendance.Infrastructure.dll": {}
@@ -656,11 +656,11 @@
           }
         }
       },
-      "System.Linq.Dynamic.Core/1.2.22": {
+      "System.Linq.Dynamic.Core/1.2.20": {
         "runtime": {
           "lib/net6.0/System.Linq.Dynamic.Core.dll": {
-            "assemblyVersion": "1.2.22.0",
-            "fileVersion": "1.2.22.0"
+            "assemblyVersion": "1.2.20.0",
+            "fileVersion": "1.2.20.0"
           }
         }
       },
@@ -1180,12 +1180,12 @@
       "path": "system.identitymodel.tokens.jwt/6.8.0",
       "hashPath": "system.identitymodel.tokens.jwt.6.8.0.nupkg.sha512"
     },
-    "System.Linq.Dynamic.Core/1.2.22": {
+    "System.Linq.Dynamic.Core/1.2.20": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-PB57h0KkIvCF1X/x7iZZKdgiQSo/5geNrConfaw4KEsbyX25MuAEcLOc5RF5GNycSfC7qwaL4L8Mm6b8uMmcAw==",
-      "path": "system.linq.dynamic.core/1.2.22",
-      "hashPath": "system.linq.dynamic.core.1.2.22.nupkg.sha512"
+      "sha512": "sha512-JyggojPaq2QM603WCwghxxwNmi8ESDLCSTTjfq/TVFvj0J2XjXfvfa0X7pe8NOruF4CbPG2K46AWmgvk0Umoqg==",
+      "path": "system.linq.dynamic.core/1.2.20",
+      "hashPath": "system.linq.dynamic.core.1.2.20.nupkg.sha512"
     },
     "System.Runtime.Caching/4.7.0": {
       "type": "package",

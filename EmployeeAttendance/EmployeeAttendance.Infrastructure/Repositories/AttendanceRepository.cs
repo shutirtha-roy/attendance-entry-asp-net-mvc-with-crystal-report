@@ -1,5 +1,6 @@
 ﻿using EmployeeAttendance.Infrastructure.DbContexts;
 using EmployeeAttendance.Infrastructure.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,18 +9,12 @@ using System.Threading.Tasks;
 
 namespace EmployeeAttendance.Infrastructure.Repositories
 {
-    public class AttendanceRepository : Repository<AttendanceEntity>, IAttendanceRepository
+    public class AttendanceRepository : Repository<AttendanceEntity, Guid>, IAttendanceRepository
     {
-        private TrainingDbContext _db;
 
-        public AttendanceRepository(TrainingDbContext db) : base(db)
+        public AttendanceRepository(ITrainingDbContext context) : base((DbContext)context)
         {
-            _db = db;
         }
 
-        public void Update(AttendanceEntity obj)
-        {
-            _db.Attendances.Update(obj);
-        }
     }
 }

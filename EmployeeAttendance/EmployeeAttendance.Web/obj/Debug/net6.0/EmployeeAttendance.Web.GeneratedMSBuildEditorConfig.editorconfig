@@ -8,81 +8,81 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EmployeeAttendance.Web
 build_property.RootNamespace = EmployeeAttendance.Web
-build_property.ProjectDir = F:\Development\Local_Project\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Web\
+build_property.ProjectDir = F:\Development\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Web\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = F:\Development\Local_Project\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Web
+build_property.MSBuildProjectDirectory = F:\Development\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[F:/Development/Local_Project/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Admin/Views/Attendance/Create.cshtml]
+[F:/Development/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Admin/Views/Attendance/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXR0ZW5kYW5jZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/Local_Project/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Admin/Views/Home/Index.cshtml]
+[F:/Development/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/Local_Project/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Admin/Views/Home/Privacy.cshtml]
+[F:/Development/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Admin/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/Local_Project/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Admin/Views/Shared/Error.cshtml]
+[F:/Development/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Admin/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/Local_Project/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Admin/Views/Shared/_LoginPartial.cshtml]
+[F:/Development/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Admin/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/Local_Project/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+[F:/Development/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/Local_Project/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Admin/Views/_ViewImports.cshtml]
+[F:/Development/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/Local_Project/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Admin/Views/_ViewStart.cshtml]
+[F:/Development/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/Local_Project/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Identity/Pages/_ViewStart.cshtml]
+[F:/Development/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/Local_Project/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Views/Home/Index.cshtml]
+[F:/Development/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/Local_Project/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Views/Home/Privacy.cshtml]
+[F:/Development/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/Local_Project/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Views/Shared/Error.cshtml]
+[F:/Development/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/Local_Project/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Views/Shared/_LoginPartial.cshtml]
+[F:/Development/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/Local_Project/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[F:/Development/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/Local_Project/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Views/_ViewImports.cshtml]
+[F:/Development/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/Local_Project/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Views/_ViewStart.cshtml]
+[F:/Development/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/Local_Project/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Admin/Views/Shared/_Layout.cshtml]
+[F:/Development/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-xk6kutv7j0
 
-[F:/Development/Local_Project/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Views/Shared/_Layout.cshtml]
+[F:/Development/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-vwnusu5osa

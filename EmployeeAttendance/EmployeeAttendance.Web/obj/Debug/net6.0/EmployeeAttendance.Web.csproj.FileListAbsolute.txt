@@ -605,3 +605,4 @@ F:\Development\Local_Project\attendance-entry-asp-net-mvc-with-crystal-report\Em
 F:\Development\Local_Project\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Web\obj\Debug\net6.0\scopedcss\projectbundle\EmployeeAttendance.Web.bundle.scp.css
 F:\Development\Local_Project\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Web\obj\Debug\net6.0\EmployeeAttendance.Web.csproj.CopyComplete
 F:\Development\Local_Project\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Web\obj\Debug\net6.0\EmployeeAttendance.Web.genruntimeconfig.cache
+F:\Development\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Web\obj\Debug\net6.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css

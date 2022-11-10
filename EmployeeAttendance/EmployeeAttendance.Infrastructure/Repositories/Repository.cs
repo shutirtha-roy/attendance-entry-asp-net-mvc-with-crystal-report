@@ -1,52 +1,67 @@
 ﻿using EmployeeAttendance.Infrastructure.DbContexts;
+using EmployeeAttendance.Infrastructure.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace EmployeeAttendance.Infrastructure.Repositories
 {
-    public class Repository<T> : IRepository<T> where T : class
+    public class Repository<TEntity, TKey>
+        : IRepository<TEntity, TKey>
+        where TEntity : class, IEntity<TKey>
     {
-        private readonly TrainingDbContext _db;
-        internal DbSet<T> dbSet;
+        protected DbContext _dbContext;
+        protected DbSet<TEntity> _dbSet;
+        protected int CommandTimeout { get; set; }
 
-        public Repository(TrainingDbContext db)
+        public Repository(DbContext context)
         {
-            _db = db;
-            dbSet = _db.Set<T>();
+            CommandTimeout = 300;
+            _dbContext = context;
+            _dbSet = _dbContext.Set<TEntity>();
         }
 
-        public void Add(T entity)
+        public virtual void Add(TEntity entity)
         {
-            dbSet.Add(entity);
+            _dbSet.Add(entity);
         }
 
-        public IEnumerable<T> GetAll(string? includeProperties = null)
+        public virtual void Remove(TKey id)
         {
-            IQueryable<T> query = dbSet;
+            var entityToDelete = _dbSet.Find(id);
+            Remove(entityToDelete);
+        }
 
-            if (includeProperties != null)
+        public virtual void Remove(TEntity entityToDelete)
+        {
+            if (_dbContext.Entry(entityToDelete).State == EntityState.Detached)
             {
-                foreach (var includeProp in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
-                {
-                    query = query.Include(includeProp);
-                }
+                _dbSet.Attach(entityToDelete);
             }
-
-            return query.ToList();
+            _dbSet.Remove(entityToDelete);
         }
 
-        public void Remove(T entity)
+        public virtual void Remove(Expression<Func<TEntity, bool>> filter)
         {
-            dbSet.Remove(entity);
+            _dbSet.RemoveRange(_dbSet.Where(filter));
         }
 
-        public void RemoveRange(IEnumerable<T> entity)
+        public virtual void Edit(TEntity entityToUpdate)
         {
-            dbSet.RemoveRange(entity);
+            if (_dbContext.Entry(entityToUpdate).State == EntityState.Detached)
+            {
+                _dbSet.Attach(entityToUpdate);
+            }
+            _dbContext.Entry(entityToUpdate).State = EntityState.Modified;
+        }
+
+        public IList<TEntity> GetAll()
+        {
+            return _dbSet.ToList();
         }
     }
 }

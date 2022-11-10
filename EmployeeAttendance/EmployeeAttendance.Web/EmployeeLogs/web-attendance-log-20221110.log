@@ -1,0 +1,53 @@
+2022-11-10 06:15:39.860 +06:00 [INF] I am in the Index page
+2022-11-10 06:20:54.948 +06:00 [INF] I am in the Index page
+2022-11-10 06:23:00.716 +06:00 [INF] I am in the Index page
+2022-11-10 06:25:31.237 +06:00 [INF] I am in the Index page
+2022-11-10 06:27:12.865 +06:00 [INF] I am in the Index page
+2022-11-10 06:32:09.312 +06:00 [INF] I am in the Index page
+2022-11-10 06:33:26.439 +06:00 [INF] I am in the Index page
+2022-11-10 07:51:59.299 +06:00 [INF] I am in the Index page
+2022-11-10 07:55:43.085 +06:00 [INF] I am in the Index page
+2022-11-10 07:58:28.529 +06:00 [INF] I am in the Index page
+2022-11-10 08:17:59.376 +06:00 [INF] I am in the Index page
+2022-11-10 08:19:21.809 +06:00 [INF] I am in the Index page
+2022-11-10 08:22:04.512 +06:00 [INF] I am in the Index page
+2022-11-10 08:22:15.704 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The entity type 'AttendanceViewModel' was not found. Ensure that the entity type has been added to the model.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.GetOrCreateEntry(Object entity)
+   at Microsoft.EntityFrameworkCore.DbContext.EntryWithoutDetectChanges[TEntity](TEntity entity)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityState[TEntity](TEntity entity, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.Add[TEntity](TEntity entity)
+   at EmployeeAttendance.Web.Areas.Admin.Controllers.AttendanceController.Create(AttendanceViewModel obj) in F:\Development\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Web\Areas\Admin\Controllers\AttendanceController.cs:line 49
+   at lambda_method572(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-10 08:25:53.435 +06:00 [INF] I am in the Index page
+2022-11-10 08:37:00.658 +06:00 [INF] I am in the Index page
+2022-11-10 08:41:06.566 +06:00 [INF] I am in the Index page
+2022-11-10 08:42:49.789 +06:00 [INF] I am in the Index page
+2022-11-10 08:50:09.178 +06:00 [INF] I am in the Index page
+2022-11-10 08:52:15.709 +06:00 [INF] I am in the Index page
+2022-11-10 08:54:42.085 +06:00 [INF] I am in the Index page
+2022-11-10 08:56:23.743 +06:00 [INF] I am in the Index page
+2022-11-10 09:03:12.750 +06:00 [INF] I am in the Index page
+2022-11-10 09:04:22.550 +06:00 [INF] I am in the Index page
+2022-11-10 09:11:52.378 +06:00 [INF] I am in the Index page
+2022-11-10 09:18:40.117 +06:00 [INF] I am in the Index page
