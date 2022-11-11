@@ -28,7 +28,7 @@ namespace EmployeeAttendance.Web.Areas.Admin.Controllers
             AttendanceViewModel attendanceVM = _scope.Resolve<AttendanceViewModel>();
             attendanceVM.Attendance = _scope.Resolve<AttendanceCreateModel>();
             attendanceVM.EmployeeList = GetSelectedEmployeeProfileData();
-
+            
             return View(attendanceVM);
         }
 
