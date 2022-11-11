@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pigjG1A/fB0Gyr2p4r+cxlaCpu/CoFQFhxQr/ol/2mIiI7Q+hSGmnSu/dJOojvr8qF6jogBVL0/NXkTeg3i4Tg==",
+  "dgSpecHash": "vWSz5bX9kuGq6udM4ycKsFz/3aj3bLlhc8qCVzoz4FWLV088LHBhXwEMcLty8sMRccE7gU8Q0V1qYxXbM25zfw==",
   "success": true,
-  "projectFilePath": "F:\\Development\\attendance-entry-asp-net-mvc-with-crystal-report\\EmployeeAttendance\\EmployeeAttendance.Web\\EmployeeAttendance.Web.csproj",
+  "projectFilePath": "F:\\Development\\Local_Project\\attendance-entry-asp-net-mvc-with-crystal-report\\EmployeeAttendance\\EmployeeAttendance.Web\\EmployeeAttendance.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sthir\\.nuget\\packages\\autofac\\6.4.0\\autofac.6.4.0.nupkg.sha512",
     "C:\\Users\\sthir\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",
