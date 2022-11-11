@@ -1,4 +1,5 @@
-﻿using CrystalDecisions.CrystalReports.Engine;
+﻿using Autofac.Integration.Web.Forms;
+using CrystalDecisions.CrystalReports.Engine;
 using CrystalDecisions.Shared;
 using EmployeeAttendance.WebForm.Services;
 using System;
@@ -13,11 +14,12 @@ namespace EmployeeAttendance.WebForm.Setup
 {
     public partial class EmployeeReport : System.Web.UI.Page
     {
-        private readonly IEmployeeService _employeeService;
+        public  IEmployeeService _employeeService { get; set; }
         public static string EmployeeId { get; set; }
+
         public EmployeeReport()
         {
-            _employeeService = new EmployeeService();
+
         }
 
         protected void Page_Load(object sender, EventArgs e)

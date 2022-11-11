@@ -113,3 +113,17 @@ F:\Development\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendan
 F:\Development\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.WebForm\bin\stdole.dll
 F:\Development\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.WebForm\bin\Microsoft.Extensions.DependencyInjection.xml
 F:\Development\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.WebForm\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+F:\Development\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.WebForm\bin\Autofac.dll
+F:\Development\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.WebForm\bin\Autofac.Integration.Web.dll
+F:\Development\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.WebForm\bin\Microsoft.Bcl.AsyncInterfaces.dll
+F:\Development\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.WebForm\bin\System.Buffers.dll
+F:\Development\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.WebForm\bin\System.Diagnostics.DiagnosticSource.dll
+F:\Development\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.WebForm\bin\System.Memory.dll
+F:\Development\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.WebForm\bin\System.Numerics.Vectors.dll
+F:\Development\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.WebForm\bin\Autofac.xml
+F:\Development\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.WebForm\bin\Autofac.Integration.Web.xml
+F:\Development\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.WebForm\bin\Microsoft.Bcl.AsyncInterfaces.xml
+F:\Development\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.WebForm\bin\System.Buffers.xml
+F:\Development\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.WebForm\bin\System.Diagnostics.DiagnosticSource.xml
+F:\Development\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.WebForm\bin\System.Memory.xml
+F:\Development\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.WebForm\bin\System.Numerics.Vectors.xml
