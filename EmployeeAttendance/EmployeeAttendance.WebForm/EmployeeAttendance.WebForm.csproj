@@ -295,6 +295,9 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="StaticData\EmployeeStaticData.cs" />
+    <Compile Include="StaticData\MessageBox.cs" />
+    <Compile Include="StaticData\Validation.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
