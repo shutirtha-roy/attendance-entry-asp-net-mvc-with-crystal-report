@@ -1,4 +1,5 @@
 ﻿using EmployeeAttendance.Infrastructure.Entities;
+using EmployeeAttendance.Infrastructure.Seeds;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -30,6 +31,14 @@ namespace EmployeeAttendance.Infrastructure.DbContexts
             }
 
             base.OnConfiguring(optionsBuilder);
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<AttendanceEntity>()
+                .HasData(new AttendanceSeed().Attendances);
+
+            base.OnModelCreating(modelBuilder);
         }
 
         public DbSet<AttendanceEntity> Attendances { get; set; }
