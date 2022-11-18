@@ -70,6 +70,9 @@ namespace EmployeeAttendance.Infrastructure.Services
                 }
             }
 
+            if (sqlCommand.Connection.State == System.Data.ConnectionState.Open)
+                sqlCommand.Connection.Close();
+
             return employeeName;
         }
     }
