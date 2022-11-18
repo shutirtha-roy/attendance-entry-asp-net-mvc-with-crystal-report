@@ -1,6 +1,5 @@
 ﻿using Autofac;
 using EmployeeAttendance.Infrastructure.DbContexts;
-using EmployeeAttendance.Infrastructure.Entities;
 using EmployeeAttendance.Web.Areas.Admin.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -10,17 +9,18 @@ namespace EmployeeAttendance.Web.Areas.Admin.Controllers
     [Area("Admin")]
     public class AttendanceController : Controller
     {
+        private readonly ILogger<AttendanceController> _logger;
         private readonly ILifetimeScope _scope;
-        private readonly TrainingDbContext _db;
-        public AttendanceController(ILifetimeScope scope, TrainingDbContext db)
+        public AttendanceController(ILogger<AttendanceController> logger, ILifetimeScope scope)
         {
+            _logger = logger;
             _scope = scope;
-            _db = db;
         }
 
         public IActionResult Index()
         {
-            return View();
+            //_logger.LogInformation("I am in attendance index page");
+            return RedirectToAction("Create");
         }
 
         public IActionResult Create()
@@ -28,7 +28,6 @@ namespace EmployeeAttendance.Web.Areas.Admin.Controllers
             AttendanceViewModel attendanceVM = _scope.Resolve<AttendanceViewModel>();
             attendanceVM.Attendance = _scope.Resolve<AttendanceCreateModel>();
             attendanceVM.EmployeeList = GetSelectedEmployeeProfileData();
-            
             return View(attendanceVM);
         }
 
@@ -38,11 +37,26 @@ namespace EmployeeAttendance.Web.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
+                _logger.LogInformation("Model State is valid during creating of attendance");
                 obj.Attendance.ResolveDependency(_scope);
-                obj.Attendance.CreateAttendance();
-                return RedirectToAction("Create");
-                
+
+                try
+                {
+                    obj.Attendance.CreateAttendance();
+                    TempData["success"] = "Attendance added successfully";
+                    return RedirectToAction("Create");
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, ex.Message);
+                    TempData["error"] = "Attendance didn't create successfully";
+                }
             }
+            else
+            {
+                TempData["error"] = "Attendance failed, due to incorrect inputs";
+            }
+
 
             return View(obj);
         }
@@ -77,6 +91,5 @@ namespace EmployeeAttendance.Web.Areas.Admin.Controllers
 
             return data;
         }
-
     }
 }

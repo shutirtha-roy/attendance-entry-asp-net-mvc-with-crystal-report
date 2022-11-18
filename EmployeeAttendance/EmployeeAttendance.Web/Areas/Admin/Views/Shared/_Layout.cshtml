@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/HRIS.Web.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
     <link rel="stylesheet" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" />
     @await RenderSectionAsync("Styles", required: false)
 </head>
@@ -27,6 +28,7 @@
         </nav>
 
         <div id="content">
+            <partial name="_Notification" />
             @RenderBody()
         </div>
     </div>
