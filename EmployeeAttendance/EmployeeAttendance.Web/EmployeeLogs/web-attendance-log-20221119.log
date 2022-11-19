@@ -47,3 +47,7 @@ Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostExce
 2022-11-19 01:31:00.707 +05:30 [INF] Model State is valid during creating of attendance
 2022-11-19 01:33:19.106 +05:30 [INF] I am in the Index page
 2022-11-19 01:34:00.165 +05:30 [INF] Model State is valid during creating of attendance
+2022-11-19 14:12:48.721 +05:30 [INF] I am in the Index page
+2022-11-19 14:13:10.437 +05:30 [INF] Model State is valid during creating of attendance
+2022-11-19 14:21:15.361 +05:30 [INF] I am in the Index page
+2022-11-19 14:21:54.898 +05:30 [INF] Model State is valid during creating of attendance

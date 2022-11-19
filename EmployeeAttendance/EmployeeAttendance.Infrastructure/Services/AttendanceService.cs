@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using AutoMapper;
 using EmployeeAttendance.Infrastructure.BusinessObjects;
 using EmployeeAttendance.Infrastructure.DbContexts;
 using EmployeeAttendance.Infrastructure.UnitOfWorks;
@@ -16,21 +17,18 @@ namespace EmployeeAttendance.Infrastructure.Services
     {
         private readonly IApplicationUnitOfWork _applicationUnitOfWork;
         private readonly ILifetimeScope _scope;
+        private readonly IMapper _mapper;
 
-        public AttendanceService(IApplicationUnitOfWork applicationUnitOfWork, ILifetimeScope scope)
+        public AttendanceService(IMapper mapper, IApplicationUnitOfWork applicationUnitOfWork, ILifetimeScope scope)
         {
             _applicationUnitOfWork = applicationUnitOfWork;
             _scope = scope;
+            _mapper = mapper;
         }
 
         public void CreateAttendance(AttendanceBO attendance)
         {
-            AttendanceEO courseEntity = new AttendanceEO();
-            courseEntity.EmployeeId = attendance.EmployeeId;
-            courseEntity.CreatedDate = attendance.CreatedDate;
-            courseEntity.InTime = attendance.InTime;
-            courseEntity.OutTime = attendance.OutTime;
-            courseEntity.Remarks = attendance.Remarks;
+            AttendanceEO courseEntity = _mapper.Map<AttendanceEO>(attendance);
 
             _applicationUnitOfWork.Attendances.Add(courseEntity);
             _applicationUnitOfWork.Save();

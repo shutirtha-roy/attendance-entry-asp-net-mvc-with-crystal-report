@@ -40,6 +40,8 @@ try
 
     builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
+    builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
     builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
         .AddEntityFrameworkStores<TrainingDbContext>();
     builder.Services.AddControllersWithViews();
