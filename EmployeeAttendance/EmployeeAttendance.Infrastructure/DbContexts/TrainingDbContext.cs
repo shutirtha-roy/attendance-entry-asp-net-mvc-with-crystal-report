@@ -10,7 +10,9 @@ using System.Threading.Tasks;
 
 namespace EmployeeAttendance.Infrastructure.DbContexts
 {
-    public class TrainingDbContext : IdentityDbContext, ITrainingDbContext
+    public class TrainingDbContext : IdentityDbContext<ApplicationUser, ApplicationRole,
+        Guid, ApplicationUserClaim, ApplicationUserRole, ApplicationUserLogin,
+        ApplicationRoleClaim, ApplicationUserToken>, ITrainingDbContext
     {
         private readonly string _connectionString;
         private readonly string _migrationAssemblyName;

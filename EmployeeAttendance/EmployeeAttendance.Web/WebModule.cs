@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using EmployeeAttendance.Web.Areas.Admin.Models;
+using EmployeeAttendance.Web.Models;
 
 namespace EmployeeAttendance.Web
 {
@@ -14,6 +15,10 @@ namespace EmployeeAttendance.Web
             builder.RegisterType<AttendanceViewModel>().AsSelf();
 
             builder.RegisterType<AttendanceListModel>().AsSelf();
+
+            builder.RegisterType<RegisterModel>().AsSelf();
+
+            builder.RegisterType<LoginModel>().AsSelf();
 
             base.Load(builder);
         }

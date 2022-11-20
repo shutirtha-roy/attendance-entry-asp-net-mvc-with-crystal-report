@@ -2,7 +2,10 @@ using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using EmployeeAttendance.Infrastructure;
 using EmployeeAttendance.Infrastructure.DbContexts;
+using EmployeeAttendance.Infrastructure.Entities;
 using EmployeeAttendance.Web;
+using FirstDemo.Infrastructure.Services;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
@@ -42,8 +45,45 @@ try
 
     builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
-    builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-        .AddEntityFrameworkStores<TrainingDbContext>();
+    builder.Services
+    .AddIdentity<ApplicationUser, ApplicationRole>()
+    .AddEntityFrameworkStores<TrainingDbContext>()
+    .AddUserManager<ApplicationUserManager>()
+    .AddRoleManager<ApplicationRoleManager>()
+    .AddSignInManager<ApplicationSignInManager>()
+    .AddDefaultTokenProviders();
+
+    builder.Services.AddAuthentication()
+    .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options => {
+        options.LoginPath = new PathString("/Account/Login");
+        options.AccessDeniedPath = new PathString("/Account/Login");
+        options.LogoutPath = new PathString("/Account/Login");
+        options.Cookie.Name = "FirstDemoPortal.Identity"; //We can customize cookie name
+        options.SlidingExpiration = true;
+        options.ExpireTimeSpan = TimeSpan.FromHours(1);
+    });
+
+    builder.Services.Configure<IdentityOptions>(options =>
+    {
+        // Password settings.
+        options.Password.RequireDigit = true;
+        options.Password.RequireLowercase = false;
+        options.Password.RequireNonAlphanumeric = false;
+        options.Password.RequireUppercase = false;
+        options.Password.RequiredLength = 6;
+        options.Password.RequiredUniqueChars = 0;
+
+        // Lockout settings.
+        options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+        options.Lockout.MaxFailedAccessAttempts = 5;
+        options.Lockout.AllowedForNewUsers = true;
+
+        // User settings.
+        options.User.AllowedUserNameCharacters =
+        "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
+        options.User.RequireUniqueEmail = true;
+    });
+
     builder.Services.AddControllersWithViews();
 
     var app = builder.Build();
@@ -76,7 +116,7 @@ try
     app.MapControllerRoute(
         name: "default",
         pattern: "{controller=Home}/{action=Index}/{id?}");
-    app.MapRazorPages();
+    //app.MapRazorPages();
 
     app.Run();
 }
