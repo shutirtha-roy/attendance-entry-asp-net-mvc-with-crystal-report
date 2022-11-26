@@ -1,12 +1,14 @@
 ﻿using Autofac;
 using EmployeeAttendance.Infrastructure.DbContexts;
 using EmployeeAttendance.Web.Areas.Admin.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace EmployeeAttendance.Web.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class AttendanceController : Controller
     {
         private readonly ILogger<AttendanceController> _logger;
@@ -16,6 +18,7 @@ namespace EmployeeAttendance.Web.Areas.Admin.Controllers
             _logger = logger;
             _scope = scope;
         }
+
 
         public IActionResult Index()
         {
