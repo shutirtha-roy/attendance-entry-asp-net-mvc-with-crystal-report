@@ -133,3 +133,36 @@ Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostExce
 2022-11-26 17:48:42.480 +06:00 [INF] User created a new account with password.
 2022-11-26 17:48:42.707 +06:00 [INF] I am in the Index page
 2022-11-26 17:49:23.099 +06:00 [INF] I am in the Index page
+2022-11-26 17:53:35.268 +06:00 [INF] I am in the Index page
+2022-11-26 17:53:54.030 +06:00 [INF] User logged in.
+2022-11-26 17:53:54.041 +06:00 [INF] I am in the Index page
+2022-11-26 17:53:58.903 +06:00 [INF] I am in the Index page
+2022-11-26 17:54:00.494 +06:00 [ERR] I am in Privacy page
+2022-11-26 17:54:01.498 +06:00 [INF] I am in the Index page
+2022-11-26 17:54:02.405 +06:00 [INF] I am in the Index page
+2022-11-26 17:54:40.600 +06:00 [INF] I am in the Index page
+2022-11-26 17:56:03.234 +06:00 [INF] I am in the Index page
+2022-11-26 17:56:38.126 +06:00 [INF] I am in the Index page
+2022-11-26 17:57:06.481 +06:00 [INF] I am in the Index page
+2022-11-26 17:57:46.943 +06:00 [INF] I am in the Index page
+2022-11-26 17:59:25.848 +06:00 [INF] I am in the Index page
+2022-11-26 18:01:39.936 +06:00 [INF] I am in the Index page
+2022-11-26 18:02:23.013 +06:00 [INF] I am in the Index page
+2022-11-26 18:02:23.753 +06:00 [ERR] I am in Privacy page
+2022-11-26 18:03:10.639 +06:00 [INF] I am in the Index page
+2022-11-26 18:04:37.251 +06:00 [INF] I am in the Index page
+2022-11-26 18:06:34.004 +06:00 [INF] I am in the Index page
+2022-11-26 18:08:06.663 +06:00 [INF] I am in the Index page
+2022-11-26 18:08:23.930 +06:00 [INF] User logged in.
+2022-11-26 18:08:23.942 +06:00 [INF] I am in the Index page
+2022-11-26 18:08:27.658 +06:00 [INF] I am in the Index page
+2022-11-26 18:08:30.036 +06:00 [INF] I am in the Index page
+2022-11-26 18:08:32.783 +06:00 [INF] I am in the Index page
+2022-11-26 18:08:35.219 +06:00 [INF] I am in the Index page
+2022-11-26 18:08:43.990 +06:00 [INF] I am in the Index page
+2022-11-26 18:08:46.598 +06:00 [INF] I am in the Index page
+2022-11-26 18:08:47.777 +06:00 [INF] I am in the Index page
+2022-11-26 18:08:54.609 +06:00 [INF] I am in the Index page
+2022-11-26 18:08:55.167 +06:00 [ERR] I am in Privacy page
+2022-11-26 18:08:55.641 +06:00 [INF] I am in the Index page
+2022-11-26 18:08:56.130 +06:00 [ERR] I am in Privacy page
