@@ -43,13 +43,7 @@ namespace EmployeeAttendance.Web.Data.Migrations
                 oldType: "nvarchar(450)");
 
             migrationBuilder.AddColumn<string>(
-                name: "FirstName",
-                table: "AspNetUsers",
-                type: "nvarchar(max)",
-                nullable: true);
-
-            migrationBuilder.AddColumn<string>(
-                name: "LastName",
+                name: "Name",
                 table: "AspNetUsers",
                 type: "nvarchar(max)",
                 nullable: true);
@@ -140,11 +134,7 @@ namespace EmployeeAttendance.Web.Data.Migrations
             migrationBuilder.DropPrimaryKey(name: "PK_AspNetRoles", table: "AspNetRoles");
 
             migrationBuilder.DropColumn(
-                name: "FirstName",
-                table: "AspNetUsers");
-
-            migrationBuilder.DropColumn(
-                name: "LastName",
+                name: "Name",
                 table: "AspNetUsers");
 
             migrationBuilder.AlterColumn<string>(

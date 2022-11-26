@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EmployeeAttendance.Web.Data.Migrations
 {
     [DbContext(typeof(TrainingDbContext))]
-    [Migration("20221120115241_AddFieldsInUser")]
+    [Migration("20221126114520_AddFieldsInUser")]
     partial class AddFieldsInUser
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -96,17 +96,14 @@ namespace EmployeeAttendance.Web.Data.Migrations
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
 
-                    b.Property<string>("FirstName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("LastName")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
 
                     b.Property<DateTimeOffset?>("LockoutEnd")
                         .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256)

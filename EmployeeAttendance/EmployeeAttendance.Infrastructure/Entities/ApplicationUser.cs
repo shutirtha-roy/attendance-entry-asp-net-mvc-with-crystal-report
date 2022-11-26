@@ -9,7 +9,6 @@ namespace EmployeeAttendance.Infrastructure.Entities
 {
     public class ApplicationUser : IdentityUser<Guid>
     {
-        public string? FirstName { get; set; }
-        public string? LastName { get; set; }
+        public string? Name { get; set; }
     }
 }

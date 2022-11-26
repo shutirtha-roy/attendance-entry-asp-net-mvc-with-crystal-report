@@ -2929,19 +2929,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\USER\\.nuget\\packages\\": {}
+    "C:\\Users\\sthir\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Development\\ASP .NET\\Projects\\attendance-entry-asp-net-mvc-with-crystal-report\\EmployeeAttendance\\EmployeeAttendance.Infrastructure\\EmployeeAttendance.Infrastructure.csproj",
+      "projectUniqueName": "F:\\Development\\ASP .NET\\Repository\\attendance-entry-asp-net-mvc-with-crystal-report\\EmployeeAttendance\\EmployeeAttendance.Infrastructure\\EmployeeAttendance.Infrastructure.csproj",
       "projectName": "EmployeeAttendance.Infrastructure",
-      "projectPath": "D:\\Development\\ASP .NET\\Projects\\attendance-entry-asp-net-mvc-with-crystal-report\\EmployeeAttendance\\EmployeeAttendance.Infrastructure\\EmployeeAttendance.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "D:\\Development\\ASP .NET\\Projects\\attendance-entry-asp-net-mvc-with-crystal-report\\EmployeeAttendance\\EmployeeAttendance.Infrastructure\\obj\\",
+      "projectPath": "F:\\Development\\ASP .NET\\Repository\\attendance-entry-asp-net-mvc-with-crystal-report\\EmployeeAttendance\\EmployeeAttendance.Infrastructure\\EmployeeAttendance.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\sthir\\.nuget\\packages\\",
+      "outputPath": "F:\\Development\\ASP .NET\\Repository\\attendance-entry-asp-net-mvc-with-crystal-report\\EmployeeAttendance\\EmployeeAttendance.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sthir\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2949,6 +2949,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "F:\\Extra\\custom-csharp-json-serializer\\src": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3025,7 +3026,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

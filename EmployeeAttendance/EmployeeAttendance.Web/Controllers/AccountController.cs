@@ -58,8 +58,7 @@ namespace EmployeeAttendance.Web.Controllers
                 {
                     UserName = model.Email,
                     Email = model.Email,
-                    FirstName = model.FirstName,
-                    LastName = model.LastName
+                    Name = model.Name
                 };
 
                 var result = await _userManager.CreateAsync(user, model.Password);
@@ -71,12 +70,12 @@ namespace EmployeeAttendance.Web.Controllers
                 {
                     _logger.LogInformation("User created a new account with password.");
 
-                    //await _userManager.AddToRolesAsync(user, new string[] { "Teacher" });
-                    await _userManager.AddClaimsAsync(user, new Claim[]
-                    {
-                        new Claim("ViewCourse", "true"),
-                        new Claim("CreateCourse", "true")
-                    });
+                    await _userManager.AddToRolesAsync(user, new string[] { "Admin" });
+                    //await _userManager.AddClaimsAsync(user, new Claim[]
+                    //{
+                    //    new Claim("ViewCourse", "true"),
+                    //    new Claim("CreateCourse", "true")
+                    //});
 
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
