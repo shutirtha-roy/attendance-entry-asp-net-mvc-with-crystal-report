@@ -39,10 +39,10 @@
             </div>
         </div>
     </nav>
-
-    <div class="wrapper d-flex align-items-stretch">
-        @if (SignInManager.IsSignedIn(User))
-        {
+    
+    @if (SignInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+    {
+        <div class="wrapper d-flex align-items-stretch">
             <nav id="sidebar">
 		        <div class="p-4 pt-5">
 			        <h1 class="text-center"><a href="#" class="logo">HRIS</a></h1>
@@ -53,13 +53,22 @@
 			        </ul>
 		        </div>
             </nav>
-        }
 
-        <div id="content" style="margin: auto; width: 1200px;">
-            <partial name="_Notification" />
-            @RenderBody()
+            <div id="content" style="margin: auto; width: 1200px;">
+                <partial name="_Notification" />
+                @RenderBody()
+            </div>
         </div>
-    </div>
+    }
+    else
+    {
+        <div class="container">
+            <main role="main" class="pb-3">
+                <partial name="_Notification" />
+                @RenderBody()
+            </main>
+        </div>
+    }
 
     
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
