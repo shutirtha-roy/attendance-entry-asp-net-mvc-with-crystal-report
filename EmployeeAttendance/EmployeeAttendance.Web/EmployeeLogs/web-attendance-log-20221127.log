@@ -1,0 +1,155 @@
+2022-11-27 02:07:49.465 +06:00 [INF] I am in the Index page
+2022-11-27 02:07:55.816 +06:00 [ERR] I am in Privacy page
+2022-11-27 02:07:56.240 +06:00 [INF] I am in the Index page
+2022-11-27 02:08:14.076 +06:00 [INF] User logged in.
+2022-11-27 02:08:14.088 +06:00 [INF] I am in the Index page
+2022-11-27 02:08:17.619 +06:00 [INF] I am in the Index page
+2022-11-27 02:08:18.271 +06:00 [INF] I am in the Index page
+2022-11-27 02:08:18.938 +06:00 [ERR] I am in Privacy page
+2022-11-27 02:08:19.622 +06:00 [INF] I am in the Index page
+2022-11-27 02:08:20.157 +06:00 [ERR] I am in Privacy page
+2022-11-27 02:08:20.648 +06:00 [INF] I am in the Index page
+2022-11-27 02:08:21.000 +06:00 [ERR] I am in Privacy page
+2022-11-27 02:08:21.350 +06:00 [INF] I am in the Index page
+2022-11-27 02:08:21.671 +06:00 [ERR] I am in Privacy page
+2022-11-27 02:08:22.055 +06:00 [INF] I am in the Index page
+2022-11-27 02:08:22.413 +06:00 [ERR] I am in Privacy page
+2022-11-27 02:08:23.071 +06:00 [INF] I am in the Index page
+2022-11-27 02:09:05.794 +06:00 [INF] I am in the Index page
+2022-11-27 02:09:10.143 +06:00 [INF] I am in the Index page
+2022-11-27 02:12:28.152 +06:00 [INF] I am in the Index page
+2022-11-27 02:12:28.667 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+Autofac.Core.Registration.ComponentNotRegisteredException: The requested service 'Microsoft.AspNetCore.Identity.RoleManager`1[[EmployeeAttendance.Infrastructure.Entities.ApplicationUser, EmployeeAttendance.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]' has not been registered. To avoid this exception, either register a component to provide the service, check for service registration using IsRegistered(), or use the ResolveOptional() method to resolve an optional dependency.
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.<>c__DisplayClass8_0.<CreateActivateInfo>b__1(ViewContext context)
+   at Microsoft.Extensions.Internal.PropertyActivator`1.Activate(Object instance, TContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-27 02:13:03.619 +06:00 [INF] I am in the Index page
+2022-11-27 02:13:04.117 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+Autofac.Core.Registration.ComponentNotRegisteredException: The requested service 'Microsoft.AspNetCore.Identity.RoleManager`1[[Microsoft.AspNetCore.Identity.IdentityUser, Microsoft.Extensions.Identity.Stores, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]' has not been registered. To avoid this exception, either register a component to provide the service, check for service registration using IsRegistered(), or use the ResolveOptional() method to resolve an optional dependency.
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.<>c__DisplayClass8_0.<CreateActivateInfo>b__1(ViewContext context)
+   at Microsoft.Extensions.Internal.PropertyActivator`1.Activate(Object instance, TContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-27 02:17:56.765 +06:00 [INF] I am in the Index page
+2022-11-27 02:18:23.862 +06:00 [INF] User logged in.
+2022-11-27 02:18:23.875 +06:00 [INF] I am in the Index page
+2022-11-27 02:18:25.611 +06:00 [INF] I am in the Index page
+2022-11-27 02:18:26.173 +06:00 [INF] I am in the Index page
+2022-11-27 02:18:26.346 +06:00 [INF] I am in the Index page
+2022-11-27 02:18:26.523 +06:00 [INF] I am in the Index page
+2022-11-27 02:18:26.706 +06:00 [INF] I am in the Index page
+2022-11-27 02:18:27.203 +06:00 [INF] I am in the Index page
+2022-11-27 02:18:27.404 +06:00 [INF] I am in the Index page
+2022-11-27 02:19:39.125 +06:00 [INF] I am in the Index page
+2022-11-27 02:19:42.597 +06:00 [INF] I am in the Index page
+2022-11-27 02:19:42.980 +06:00 [INF] I am in the Index page
+2022-11-27 02:19:44.006 +06:00 [INF] I am in the Index page
+2022-11-27 02:19:45.075 +06:00 [INF] I am in the Index page
+2022-11-27 02:19:45.459 +06:00 [INF] I am in the Index page
+2022-11-27 02:19:45.626 +06:00 [INF] I am in the Index page
+2022-11-27 02:19:45.793 +06:00 [INF] I am in the Index page
+2022-11-27 02:20:49.756 +06:00 [INF] I am in the Index page
+2022-11-27 02:21:09.975 +06:00 [INF] User created a new account with password.
+2022-11-27 02:21:10.191 +06:00 [INF] I am in the Index page
+2022-11-27 02:21:12.760 +06:00 [INF] I am in the Index page
+2022-11-27 02:21:13.143 +06:00 [INF] I am in the Index page
+2022-11-27 02:21:13.746 +06:00 [INF] I am in the Index page
+2022-11-27 02:21:14.139 +06:00 [INF] I am in the Index page
+2022-11-27 02:21:14.340 +06:00 [INF] I am in the Index page
+2022-11-27 02:21:14.490 +06:00 [INF] I am in the Index page
+2022-11-27 02:21:15.014 +06:00 [ERR] I am in Privacy page
+2022-11-27 02:21:15.588 +06:00 [INF] I am in the Index page
+2022-11-27 02:21:16.128 +06:00 [ERR] I am in Privacy page
+2022-11-27 02:21:16.479 +06:00 [INF] I am in the Index page
+2022-11-27 02:21:16.690 +06:00 [INF] I am in the Index page
+2022-11-27 02:21:17.111 +06:00 [ERR] I am in Privacy page
+2022-11-27 02:21:17.455 +06:00 [INF] I am in the Index page
+2022-11-27 02:21:17.911 +06:00 [ERR] I am in Privacy page
+2022-11-27 02:21:18.203 +06:00 [INF] I am in the Index page
+2022-11-27 02:21:20.709 +06:00 [INF] I am in the Index page
+2022-11-27 02:21:21.639 +06:00 [INF] I am in the Index page
+2022-11-27 02:21:22.019 +06:00 [ERR] I am in Privacy page
+2022-11-27 02:21:22.485 +06:00 [INF] I am in the Index page
+2022-11-27 02:21:22.840 +06:00 [ERR] I am in Privacy page
+2022-11-27 02:21:23.925 +06:00 [INF] I am in the Index page
+2022-11-27 02:21:32.954 +06:00 [INF] User logged in.
+2022-11-27 02:21:32.957 +06:00 [INF] I am in the Index page
+2022-11-27 02:21:34.237 +06:00 [INF] I am in the Index page
+2022-11-27 02:21:42.781 +06:00 [INF] User logged in.
+2022-11-27 02:21:42.786 +06:00 [INF] I am in the Index page
+2022-11-27 02:21:47.282 +06:00 [INF] I am in the Index page
+2022-11-27 02:22:43.461 +06:00 [INF] I am in the Index page
+2022-11-27 02:22:55.782 +06:00 [INF] User logged in.
+2022-11-27 02:22:55.798 +06:00 [INF] I am in the Index page
+2022-11-27 02:22:57.403 +06:00 [INF] I am in the Index page
+2022-11-27 02:23:06.731 +06:00 [INF] User logged in.
+2022-11-27 02:23:06.735 +06:00 [INF] I am in the Index page
+2022-11-27 02:23:08.990 +06:00 [INF] I am in the Index page
+2022-11-27 02:25:20.330 +06:00 [INF] I am in the Index page
+2022-11-27 02:25:34.229 +06:00 [INF] User logged in.
+2022-11-27 02:25:34.241 +06:00 [INF] I am in the Index page
+2022-11-27 02:25:35.898 +06:00 [INF] I am in the Index page
+2022-11-27 02:25:44.153 +06:00 [INF] User logged in.
+2022-11-27 02:25:44.157 +06:00 [INF] I am in the Index page
+2022-11-27 02:25:49.676 +06:00 [INF] I am in the Index page

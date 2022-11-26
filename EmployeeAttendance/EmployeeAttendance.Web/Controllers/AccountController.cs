@@ -70,7 +70,9 @@ namespace EmployeeAttendance.Web.Controllers
                 {
                     _logger.LogInformation("User created a new account with password.");
 
-                    await _userManager.AddToRolesAsync(user, new string[] { "Admin" });
+                    //await _userManager.AddToRolesAsync(user, new string[] { "Admin" });
+                    //await _userManager.AddToRolesAsync(user, new string[] { "Manager" });
+
                     //await _userManager.AddClaimsAsync(user, new Claim[]
                     //{
                     //    new Claim("ViewCourse", "true"),
