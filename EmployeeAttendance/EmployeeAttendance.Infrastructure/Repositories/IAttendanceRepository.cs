@@ -9,5 +9,6 @@ namespace EmployeeAttendance.Infrastructure.Repositories
 {
     public interface IAttendanceRepository : IRepository<AttendanceEntity, Guid>
     {
+        dynamic GetAttendencByEmployeeId(Guid id);
     }
 }
