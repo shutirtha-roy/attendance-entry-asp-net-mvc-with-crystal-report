@@ -1,8 +1,9 @@
 ﻿using Autofac;
-using EmployeeAttendance.Infrastructure.DbContexts;
+using EmployeeAttendance.Infrastructure.Entities;
 using EmployeeAttendance.Web.Areas.Admin.Models;
 using EmployeeAttendance.Web.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -14,6 +15,8 @@ namespace EmployeeAttendance.Web.Areas.Admin.Controllers
     {
         private readonly ILogger<AttendanceController> _logger;
         private readonly ILifetimeScope _scope;
+        private readonly UserManager<ApplicationUser> _userManager;
+
         public AttendanceController(ILogger<AttendanceController> logger, ILifetimeScope scope)
         {
             _logger = logger;
@@ -96,5 +99,7 @@ namespace EmployeeAttendance.Web.Areas.Admin.Controllers
 
             return data;
         }
+
+
     }
 }
