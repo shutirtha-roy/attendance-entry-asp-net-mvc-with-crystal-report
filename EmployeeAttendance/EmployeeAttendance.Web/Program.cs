@@ -57,7 +57,7 @@ try
     .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options => {
         options.LoginPath = new PathString("/Account/Login");
         options.AccessDeniedPath = new PathString("/Account/Login");
-        options.LogoutPath = new PathString("/Account/Login");
+        options.LogoutPath = new PathString("/Account/Logout");
         options.Cookie.Name = "FirstDemoPortal.Identity"; //We can customize cookie name
         options.SlidingExpiration = true;
         options.ExpireTimeSpan = TimeSpan.FromHours(1);
