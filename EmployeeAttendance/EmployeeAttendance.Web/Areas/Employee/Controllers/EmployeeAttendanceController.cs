@@ -1,9 +1,12 @@
 ﻿using Autofac;
+using EmployeeAttendance.Infrastructure.Entities;
 using EmployeeAttendance.Web.Areas.Admin.Models;
 using EmployeeAttendance.Web.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Security.Claims;
 
 namespace EmployeeAttendance.Web.Areas.Employee.Controllers
 {
@@ -13,11 +16,13 @@ namespace EmployeeAttendance.Web.Areas.Employee.Controllers
     {
         private readonly ILogger<EmployeeAttendanceController> _logger;
         private readonly ILifetimeScope _scope;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public EmployeeAttendanceController(ILogger<EmployeeAttendanceController> logger, ILifetimeScope scope)
+        public EmployeeAttendanceController(ILogger<EmployeeAttendanceController> logger, ILifetimeScope scope, UserManager<ApplicationUser> userManager)
         {
             _logger = logger;
             _scope = scope;
+            _userManager = userManager;
         }
 
         public IActionResult Index()
@@ -27,25 +32,27 @@ namespace EmployeeAttendance.Web.Areas.Employee.Controllers
 
         public IActionResult Create()
         {
-            AttendanceViewModel attendanceVM = _scope.Resolve<AttendanceViewModel>();
-            attendanceVM.Attendance = _scope.Resolve<AttendanceCreateModel>();
-            attendanceVM.EmployeeList = GetSelectedEmployeeProfileData();
-            return View(attendanceVM);
+            AttendanceCreateModel attendance = _scope.Resolve<AttendanceCreateModel>();
+
+            var userId = new Guid(User.FindFirstValue(ClaimTypes.NameIdentifier));
+            attendance.EmployeeId = userId;
+
+            return View(attendance);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "Admin")]
-        public IActionResult Create(AttendanceViewModel obj)
+        [Authorize(Roles = "Employee")]
+        public IActionResult Create(AttendanceCreateModel obj)
         {
             if (ModelState.IsValid)
             {
                 _logger.LogInformation("Model State is valid during creating of attendance");
-                obj.Attendance.ResolveDependency(_scope);
+                obj.ResolveDependency(_scope);
 
                 try
                 {
-                    obj.Attendance.CreateAttendance();
+                    obj.CreateAttendance();
                     TempData["success"] = "Attendance added successfully";
                     return RedirectToAction("Create");
                 }
@@ -88,6 +95,34 @@ namespace EmployeeAttendance.Web.Areas.Employee.Controllers
             employeeModel.ResolveDependency(_scope);
             var data = employeeModel.GetAllEmployeeProfile();
             return data;
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public async Task<ActionResult> GetEmployeeAttendance()
+        {
+            AttendanceListModel attendanceModel = _scope.Resolve<AttendanceListModel>();
+
+            attendanceModel.ResolveDependency(_scope);
+
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            var objAttendanceList = attendanceModel.GetEmployeeAttendance(userId);
+
+            return Json(new { data = objAttendanceList });
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public async Task<ActionResult> GetModifiedEmployeeAttendance()
+        {
+            AttendanceListModel attendanceModel = _scope.Resolve<AttendanceListModel>();
+            attendanceModel.ResolveDependency(_scope);
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var userName = User.Identity.Name;
+
+            var objEmployeeAttendanceModifiedList = attendanceModel.GetModifiedEmployeeAttendance(userId, userName);
+            return Json(new { data = objEmployeeAttendanceModifiedList });
         }
     }
 }
