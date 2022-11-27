@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 namespace EmployeeAttendance.Web.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin,Manager")]
     public class AttendanceController : Controller
     {
         private readonly ILogger<AttendanceController> _logger;
@@ -36,6 +36,7 @@ namespace EmployeeAttendance.Web.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public IActionResult Create(AttendanceViewModel obj)
         {
             if (ModelState.IsValid)
