@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using EmployeeAttendance.Infrastructure.DbContexts;
 using EmployeeAttendance.Web.Areas.Admin.Models;
+using EmployeeAttendance.Web.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
