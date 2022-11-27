@@ -61,5 +61,35 @@ namespace EmployeeAttendance.Infrastructure.Services
 
             return data;
         }
+
+        public dynamic GetEmployeeAttendance(string userId)
+        {
+            Guid Id = new Guid(userId);
+
+            return _applicationUnitOfWork.Attendances.GetById(Id);
+        }
+
+        public object GetModifiedEmployeeAttendance(string userId)
+        {
+            IEmployeeService employeeService = _scope.Resolve<IEmployeeService>();
+            AttendanceBO attendanceBO = new AttendanceBO();
+            List<dynamic> data = new List<dynamic>();
+
+            var allAttendanceData = GetEmployeeAttendance(userId);
+
+            foreach (var attendance in allAttendanceData)
+            {
+                data.Add(new
+                {
+                    Name = employeeService.GetEmployeeName(attendance.EmployeeId),
+                    CreatedDate = attendanceBO.GetOnlyDate(attendance.CreatedDate),
+                    InTime = attendanceBO.GetOnlyTime(attendance.InTime),
+                    OutTime = attendanceBO.GetOnlyTime(attendance.OutTime),
+                    Remarks = attendance.Remarks
+                });
+            }
+
+            return data;
+        }
     }
 }
