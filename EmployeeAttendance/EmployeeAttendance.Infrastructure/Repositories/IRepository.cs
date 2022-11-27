@@ -16,5 +16,6 @@ namespace EmployeeAttendance.Infrastructure.Repositories
         void Remove(Expression<Func<TEntity, bool>> filter);
         void Edit(TEntity entityToUpdate);
         IList<TEntity> GetAll();
+        TEntity GetById(TKey id);
     }
 }

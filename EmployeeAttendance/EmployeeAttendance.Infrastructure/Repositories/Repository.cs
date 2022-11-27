@@ -63,5 +63,10 @@ namespace EmployeeAttendance.Infrastructure.Repositories
         {
             return _dbSet.ToList();
         }
+
+        public virtual TEntity GetById(TKey id)
+        {
+            return _dbSet.Find(id);
+        }
     }
 }
