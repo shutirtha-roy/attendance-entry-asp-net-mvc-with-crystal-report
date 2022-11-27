@@ -40,7 +40,7 @@
         </div>
     </nav>
     
-    @if (SignInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+    @if (SignInManager.IsSignedIn(User) && (User.IsInRole("Admin") || User.IsInRole("Manager")))
     {
         <div class="wrapper d-flex align-items-stretch">
             <nav id="sidebar">
