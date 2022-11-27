@@ -72,6 +72,7 @@ namespace EmployeeAttendance.Web.Controllers
 
                     //await _userManager.AddToRolesAsync(user, new string[] { "Admin" });
                     //await _userManager.AddToRolesAsync(user, new string[] { "Manager" });
+                    await _userManager.AddToRolesAsync(user, new string[] { "Employee" });
 
                     //await _userManager.AddClaimsAsync(user, new Claim[]
                     //{
