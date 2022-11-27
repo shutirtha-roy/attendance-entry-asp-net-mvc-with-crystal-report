@@ -153,3 +153,130 @@ Autofac.Core.Registration.ComponentNotRegisteredException: The requested service
 2022-11-27 02:25:44.153 +06:00 [INF] User logged in.
 2022-11-27 02:25:44.157 +06:00 [INF] I am in the Index page
 2022-11-27 02:25:49.676 +06:00 [INF] I am in the Index page
+2022-11-27 02:45:34.240 +06:00 [INF] I am in the Index page
+2022-11-27 02:45:55.880 +06:00 [INF] User logged in.
+2022-11-27 02:45:55.892 +06:00 [INF] I am in the Index page
+2022-11-27 02:45:57.969 +06:00 [INF] I am in the Index page
+2022-11-27 02:46:17.640 +06:00 [INF] I am in the Index page
+2022-11-27 02:47:04.720 +06:00 [INF] I am in the Index page
+2022-11-27 02:47:14.645 +06:00 [INF] I am in the Index page
+2022-11-27 02:47:15.827 +06:00 [INF] I am in the Index page
+2022-11-27 02:47:25.628 +06:00 [INF] User logged in.
+2022-11-27 02:47:25.636 +06:00 [INF] I am in the Index page
+2022-11-27 02:47:27.937 +06:00 [INF] I am in the Index page
+2022-11-27 02:47:28.509 +06:00 [INF] I am in the Index page
+2022-11-27 02:47:28.678 +06:00 [INF] I am in the Index page
+2022-11-27 02:47:29.127 +06:00 [ERR] I am in Privacy page
+2022-11-27 02:47:29.646 +06:00 [INF] I am in the Index page
+2022-11-27 02:47:30.672 +06:00 [ERR] I am in Privacy page
+2022-11-27 02:47:31.396 +06:00 [INF] I am in the Index page
+2022-11-27 02:47:34.700 +06:00 [INF] I am in the Index page
+2022-11-27 16:29:22.318 +06:00 [INF] I am in the Index page
+2022-11-27 16:30:02.255 +06:00 [INF] User created a new account with password.
+2022-11-27 16:30:02.503 +06:00 [INF] I am in the Index page
+2022-11-27 16:32:34.161 +06:00 [INF] I am in the Index page
+2022-11-27 16:32:46.002 +06:00 [ERR] The view 'Create' was not found. Searched locations: ["/Areas/Employee/Views/EmployeeAttendance/Create.cshtml","/Areas/Employee/Views/Shared/Create.cshtml","/Views/Shared/Create.cshtml"]
+2022-11-27 16:32:46.409 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The view 'Create' was not found. The following locations were searched:
+/Areas/Employee/Views/EmployeeAttendance/Create.cshtml
+/Areas/Employee/Views/Shared/Create.cshtml
+/Views/Shared/Create.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-27 17:54:29.532 +06:00 [INF] I am in the Index page
+2022-11-27 17:55:13.516 +06:00 [INF] I am in the Index page
+2022-11-27 17:59:59.475 +06:00 [INF] I am in the Index page
+2022-11-27 19:22:07.593 +06:00 [INF] I am in the Index page
+2022-11-27 19:22:53.794 +06:00 [INF] I am in the Index page
+2022-11-27 19:23:00.128 +06:00 [INF] I am in the Index page
+2022-11-27 19:23:11.729 +06:00 [INF] Model State is valid during creating of attendance
+2022-11-27 19:25:42.847 +06:00 [INF] I am in the Index page
+2022-11-27 19:26:34.637 +06:00 [INF] Model State is valid during creating of attendance
+2022-11-27 19:30:30.071 +06:00 [INF] I am in the Index page
+2022-11-27 19:31:38.426 +06:00 [INF] Model State is valid during creating of attendance
+2022-11-27 19:45:37.312 +06:00 [INF] I am in the Index page
+2022-11-27 19:45:56.064 +06:00 [INF] I am in the Index page
+2022-11-27 19:46:57.144 +06:00 [INF] I am in the Index page
+2022-11-27 19:47:33.681 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'bool' does not contain a definition for 'CreatedDate'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at EmployeeAttendance.Infrastructure.Services.AttendanceService.GetModifiedEmployeeAttendance(String userId, String name) in F:\Development\ASP .NET\Repository\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Infrastructure\Services\AttendanceService.cs:line 82
+   at EmployeeAttendance.Web.Models.AttendanceListModel.GetModifiedEmployeeAttendance(String userId, String name) in F:\Development\ASP .NET\Repository\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Web\Models\AttendanceListModel.cs:line 39
+   at EmployeeAttendance.Web.Areas.Employee.Controllers.EmployeeAttendanceController.GetModifiedEmployeeAttendance() in F:\Development\ASP .NET\Repository\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Web\Areas\Employee\Controllers\EmployeeAttendanceController.cs:line 124
+   at lambda_method551(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-27 19:48:01.916 +06:00 [INF] I am in the Index page
+2022-11-27 19:48:35.105 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'bool' does not contain a definition for 'CreatedDate'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at EmployeeAttendance.Infrastructure.Services.AttendanceService.GetModifiedEmployeeAttendance(String userId, String name) in F:\Development\ASP .NET\Repository\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Infrastructure\Services\AttendanceService.cs:line 82
+   at EmployeeAttendance.Web.Models.AttendanceListModel.GetModifiedEmployeeAttendance(String userId, String name) in F:\Development\ASP .NET\Repository\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Web\Models\AttendanceListModel.cs:line 39
+   at EmployeeAttendance.Web.Areas.Employee.Controllers.EmployeeAttendanceController.GetModifiedEmployeeAttendance() in F:\Development\ASP .NET\Repository\attendance-entry-asp-net-mvc-with-crystal-report\EmployeeAttendance\EmployeeAttendance.Web\Areas\Employee\Controllers\EmployeeAttendanceController.cs:line 124
+   at lambda_method551(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-27 19:49:21.117 +06:00 [INF] I am in the Index page
+2022-11-27 19:49:35.057 +06:00 [INF] I am in the Index page
+2022-11-27 19:52:32.513 +06:00 [INF] I am in the Index page
+2022-11-27 19:52:51.524 +06:00 [INF] Model State is valid during creating of attendance
+2022-11-27 19:53:32.226 +06:00 [INF] I am in the Index page
+2022-11-27 19:53:58.518 +06:00 [INF] I am in the Index page
+2022-11-27 19:54:19.416 +06:00 [INF] User created a new account with password.
+2022-11-27 19:54:19.651 +06:00 [INF] I am in the Index page
+2022-11-27 19:54:24.294 +06:00 [INF] I am in the Index page
+2022-11-27 19:54:37.795 +06:00 [INF] Model State is valid during creating of attendance
+2022-11-27 19:54:41.551 +06:00 [INF] I am in the Index page
+2022-11-27 19:54:42.583 +06:00 [INF] I am in the Index page

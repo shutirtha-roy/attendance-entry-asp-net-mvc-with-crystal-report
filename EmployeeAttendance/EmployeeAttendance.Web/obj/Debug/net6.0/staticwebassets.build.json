@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BMbVAWFi+2NZhMa22dbrVuDnFyNkAdmo5yIyJoCg8MQ=",
+  "Hash": "yXGmpHLuZQA72P+2P5rixvlnfnR2+dtKwP1zGJg1Akw=",
   "Source": "EmployeeAttendance.Web",
   "BasePath": "_content/EmployeeAttendance.Web",
   "Mode": "Default",
@@ -1137,6 +1137,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\attendance.js"
+    },
+    {
+      "Identity": "F:\\Development\\ASP .NET\\Repository\\attendance-entry-asp-net-mvc-with-crystal-report\\EmployeeAttendance\\EmployeeAttendance.Web\\wwwroot\\js\\employeeOnlyAttendance.js",
+      "SourceId": "EmployeeAttendance.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Development\\ASP .NET\\Repository\\attendance-entry-asp-net-mvc-with-crystal-report\\EmployeeAttendance\\EmployeeAttendance.Web\\wwwroot\\",
+      "BasePath": "_content/EmployeeAttendance.Web",
+      "RelativePath": "js/employeeOnlyAttendance.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\employeeOnlyAttendance.js"
     },
     {
       "Identity": "F:\\Development\\ASP .NET\\Repository\\attendance-entry-asp-net-mvc-with-crystal-report\\EmployeeAttendance\\EmployeeAttendance.Web\\wwwroot\\js\\site.js",

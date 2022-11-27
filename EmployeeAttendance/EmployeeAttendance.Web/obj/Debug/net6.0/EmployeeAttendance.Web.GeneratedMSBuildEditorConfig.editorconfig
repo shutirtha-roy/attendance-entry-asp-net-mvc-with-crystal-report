@@ -55,6 +55,42 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[F:/Development/ASP .NET/Repository/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Employee/Views/EmployeeAttendance/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRW1wbG95ZWVcVmlld3NcRW1wbG95ZWVBdHRlbmRhbmNlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Development/ASP .NET/Repository/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Employee/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRW1wbG95ZWVcVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Development/ASP .NET/Repository/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Employee/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRW1wbG95ZWVcVmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Development/ASP .NET/Repository/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Employee/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRW1wbG95ZWVcVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Development/ASP .NET/Repository/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Employee/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRW1wbG95ZWVcVmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Development/ASP .NET/Repository/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Employee/Views/Shared/_Notification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRW1wbG95ZWVcVmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Development/ASP .NET/Repository/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Employee/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRW1wbG95ZWVcVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Development/ASP .NET/Repository/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Employee/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRW1wbG95ZWVcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Development/ASP .NET/Repository/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Employee/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRW1wbG95ZWVcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/Development/ASP .NET/Repository/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -106,6 +142,10 @@ build_metadata.AdditionalFiles.CssScope =
 [F:/Development/ASP .NET/Repository/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-xk6kutv7j0
+
+[F:/Development/ASP .NET/Repository/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Areas/Employee/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRW1wbG95ZWVcVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-8t5pmyvomx
 
 [F:/Development/ASP .NET/Repository/attendance-entry-asp-net-mvc-with-crystal-report/EmployeeAttendance/EmployeeAttendance.Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
