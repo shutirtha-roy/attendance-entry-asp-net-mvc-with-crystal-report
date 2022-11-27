@@ -66,10 +66,10 @@ namespace EmployeeAttendance.Infrastructure.Services
         {
             Guid Id = new Guid(userId);
 
-            return _applicationUnitOfWork.Attendances.GetById(Id);
+            return _applicationUnitOfWork.Attendances.GetAttendencByEmployeeId(Id);
         }
 
-        public object GetModifiedEmployeeAttendance(string userId)
+        public object GetModifiedEmployeeAttendance(string userId, string name)
         {
             IEmployeeService employeeService = _scope.Resolve<IEmployeeService>();
             AttendanceBO attendanceBO = new AttendanceBO();
@@ -81,7 +81,7 @@ namespace EmployeeAttendance.Infrastructure.Services
             {
                 data.Add(new
                 {
-                    Name = employeeService.GetEmployeeName(attendance.EmployeeId),
+                    Name = name,
                     CreatedDate = attendanceBO.GetOnlyDate(attendance.CreatedDate),
                     InTime = attendanceBO.GetOnlyTime(attendance.InTime),
                     OutTime = attendanceBO.GetOnlyTime(attendance.OutTime),

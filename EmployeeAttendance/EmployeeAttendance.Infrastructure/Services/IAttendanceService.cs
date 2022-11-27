@@ -13,5 +13,6 @@ namespace EmployeeAttendance.Infrastructure.Services
         object GetAllAtttendance();
         object GetAllModifitedAttendance();
         object GetEmployeeAttendance(string userId);
+        object GetModifiedEmployeeAttendance(string userId, string name);
     }
 }
