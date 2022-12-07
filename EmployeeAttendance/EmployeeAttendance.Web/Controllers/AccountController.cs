@@ -142,6 +142,15 @@ namespace EmployeeAttendance.Web.Controllers
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
+
+                    var user = await _userManager.FindByEmailAsync(model.Email);
+                    var roles = await _userManager.GetRolesAsync(user);
+                    
+                    if (roles.Contains("Admin") || roles.Contains("Manager"))
+                    {
+                        return RedirectToAction("Create", "Attendance", new { area = "Admin" } );
+                    }
+
                     return LocalRedirect(model.ReturnUrl);
                 }
                 if (result.RequiresTwoFactor)

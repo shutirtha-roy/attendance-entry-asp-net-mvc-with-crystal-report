@@ -3,7 +3,7 @@
     ViewData["Title"] = "Create";
 }
 
-@if(User.IsInRole("Admin"))
+@if(User.IsInRole("Manager"))
 {
     <div class="text-center">
         <h1 class="form-title">Add Employee Attendance</h1>
@@ -49,7 +49,7 @@
         </div>
     </form>
 }
-else
+else if(User.IsInRole("Admin"))
 {
     <div class="text-center">
         <h1 class="form-title">All Employee Attendances</h1>
